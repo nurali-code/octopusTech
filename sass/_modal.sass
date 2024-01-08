@@ -1,0 +1,44 @@
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 9999
+    background-color: rgba(#000, 0.6)
+    padding: 0
+    box-sizing: border-box
+    opacity: 0
+    visibility: hidden
+    transition: all ease .3s
+    &-content
+        display: block
+        background-color: #fff
+        position: absolute
+        max-width: 97%
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        input
+            border: 1px solid #C6C6C6
+
+        .filepick__name
+            background-color: #FBEBDE
+
+    &__close
+        position: absolute
+        text-align: center
+        line-height: 20px
+        font-size: 30px
+        padding: 20px
+        cursor: pointer
+        color: rgba(0, 0, 0, .5)
+        top: 0
+        right: 0
+        &:hover
+            opacity: .4
+
+    &.is-open
+        opacity: 1
+        visibility: visible

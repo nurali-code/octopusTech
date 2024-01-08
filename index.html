@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctopusTech</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container wrap">
+            <a href="#main" class="logo"><img src="./img/logo.jpg" alt="icons"></a>
+            <nav class="nav">
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#vacancies" class="nav__link">Вакансии</a>
+                <a href="#how" class="nav__link">Как мы работаем?</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <div class="container">
+            <div class="main-content">
+                <h1>IT-компания Octopus<mark>Tech</mark></h1>
+
+                <p class="main__text">
+                    Помогаем талантливым кандидатам найти работуи построить карьеру. Обеспечим
+                    успешность поиска нашей
+                    многолетней экспертизой и станем незаменимым помощником на пути к работе мечты.</p>
+
+                <a href="#" class="btn"><img src="./img/arrow.svg" alt="arrows">Найти работу</a>
+            </div>
+            <img src="./img/main.jpg" class="main__img" alt="images">
+        </div>
+    </main>
+
+    <section class="about" id="about">
+        <div class="container">
+            <img src="./img/about.svg" class="about__img" alt="illust">
+            <div class="about-title">
+                <h2>Кто мы такие?</h2>
+                <p class="about__text">
+                    OctopusTech – ваш гид в мире IT, где вы найдете идеальное направление для
+                    совершенствования своих навыков и потенциала. Мы развиваемся в таких областях, как разработка,
+                    машинное обучение, компьютерное зрение, маркетинг, коммуникации и автоматизация технологических
+                    процессов.
+                    <br>
+                    <br>
+                    <span class="fade">
+                        Мы стремимся достичь гармонии между талантливыми специалистами и ведущими компаниями в сфере IT.
+                        Наша миссия не просто помочь найти работу, а достичь баланса между запросами бизнеса и
+                        пожеланиями
+                        соискателей. Мы активно применяем современные методики анализа и подбора персонала, которые
+                        позволяют находить кандидатов даже среди скрытых талантов.
+                    </span>
+                </p>
+            </div>
+
+            <div class="about-features wrap">
+                <div class="about-item">
+                    <img class="about__icon" src="./img/about_1.svg" alt="grou">
+                    <p class="about__text">14 дней - средний срок поиска подходящей компании</p>
+                </div>
+                <div class="about-item">
+                    <img class="about__icon" src="./img/about_2.svg" alt="groups">
+                    <p class="about__text">подбор проектов под ваши интересы</p>
+                </div>
+                <div class="about-item">
+                    <img class="about__icon" src="./img/about_3.svg" alt="grop">
+                    <p class="about__text">прозрачные процессы <br> подбора</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancies" id="vacancies">
+        <div class="container">
+            <h2>Открытые вакансии</h2>
+            <div class="wrap">
+                <div class="col">
+                    <h3>DevOps: </h3>
+                    <button class="btn_outline">Middle DevOps Engineer</button>
+                    <button class="btn_outline">Senior DevOps Engineer</button>
+                </div>
+                <div class="col">
+                    <h3>Машинное обучение:</h3>
+                    <button class="btn_outline">Middle ML-инженер</button>
+                </div>
+                <div class="col">
+                    <h3>Фронтенд:</h3>
+                    <button class="btn_outline">Middle DevOps Engineer</button>
+                </div>
+                <div class="col">
+                    <h3>Бэкенд:</h3>
+                    <p class="vacancies__text">
+                        На данный момент у нас нет открытых вакансийв данном направлении, однако мы всегда рады
+                        рассмотреть предложения от соискателей! Мы свяжемся с вамипри появлении подходящих вакансий.
+                    </p>
+                    <button class="btn" id="btn"><img src="img/arrow.svg" alt="arrow">Отправить резюме</button>
+                </div>
+            </div>
+            <img src="img/vacancies.svg" class="vacancies__bg" alt="vacancies">
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container wrap">
+            <div class="col">
+                <h4 class="subheading">Получите работу прямо сейчас</h4>
+                <h2>Не нашли подходящее направлениеили вакансию?</h2>
+                <p class="contact__text">
+                    Если вы являетесь специалистом в своей области и находитесь в поиске работы, оставьте свое резюме.
+                    Мы
+                    поможем найти местов перспективной компании.
+                </p>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="text" placeholder="Ваш город" required>
+                <input type="email" placeholder="E-mail" required>
+                <label for="file" class="wrap filepick">
+                    <span class="filepick__heading">Прикрепить резюме</span>
+                    <img src="img/paperclip.svg" alt="paperclip">
+                    <input type="file" id="file" required accept=".docx, .pdf">
+                    <span class="filepick__name">Выберите файл</span>
+                </label>
+                <button type="submit" class="btn">Получить работу</button>
+            </form>
+            <img src="img/team.svg" class="contact__img" alt="team">
+        </div>
+    </section>
+
+    <section class="how" id="how">
+        <div class="container">
+            <h2>Как мы работаем?</h2>
+            <ul class="wrap">
+                <li>
+                    <span class="how__heading">Первый этап – HR-скрининг</span>
+                    <span class="how__text">
+                        Всего за 15 минут, именно столько будет длиться созвон, мы узнаем, насколько подходим друг другу
+                        и обговорим многие интересующие вопросы. Быстро и эффективно!
+                    </span>
+                    <span class="how__img"><img src="img/chat.svg" alt="chat"></span>
+                </li>
+                <li>
+                    <span class="how__heading">Третий этап – техническое интервью</span>
+                    <span class="how__text">
+                        Это важный шаг как для вас, так и для ОктопусТех. Вам предстоит пообщаться с нашим
+                        IT-специалистом, чтобы он мог оценить ваши хард-скиллы, то есть знания и навыки, которые будут
+                        необходимы при выполнении задач.
+                    </span>
+                    <span class="how__img"><img src="img/list.svg" alt="chat"></span>
+                    <span class="how__descr">
+                        *Дополнительно или вместо технического интервью может быть тестовое задание.
+                    </span>
+                </li>
+                <li>
+                    <span class="how__heading">Второй этап – HR-интервью</span>
+                    <span class="how__text">
+                        Теперь пришло время познакомиться поближе. Мы пригласим вас на видеозвонок с HR-менеджером на
+                        30-45 минут. Это хорошая возможность рассказать про ваш опыт работы, мотивацию и ожидания.
+                    </span>
+                    <span class="how__img"><img src="img/prof.svg" alt="chat"></span>
+                </li>
+                <li>
+                    <span class="how__heading">Четвертый этап – долгожданный оффер</span>
+                    <span class="how__text">
+                        После успешного прохождения всех этапов, в течение двух дней мы свяжемся с вами и скажем
+                        заветные слова: «Вы приняты!»
+                    </span>
+                    <span class="how__img"><img src="img/check.svg" alt="chat"></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="help">
+        <div class="container">
+            <h2>Мы поможем найти место в перспективной компании!</h2>
+            <form action="#">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="text" placeholder="Ваш город" required>
+                <input type="email" placeholder="E-mail" required>
+                <label for="file" class="wrap filepick">
+                    <span class="filepick__heading">Прикрепить резюме</span>
+                    <img src="img/paperclip.svg" alt="paperclip">
+                    <input type="file" id="file" required accept=".docx, .pdf">
+                    <span class="filepick__name">Выберите файл</span>
+                </label>
+                <button type="submit" class="btn">Получить работу</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container wrap">
+            <div class="col">
+                <a href="#main" class="logo"><img src="./img/logo.jpg" alt="logos" class="logon"></a>
+                <p>Помогаем талантливым кандидатам найти работу и построить карьеру.</p>
+            </div>
+            <div class="col">
+                <h3 class="footer__heading">Меню</h3>
+                <nav>
+                    <a href="#"> О нас</a>
+                    <a href="#"> Вакансии</a>
+                    <a href="#"> Как мы работает?</a>
+                </nav>
+            </div>
+
+            <div class="col">
+                <h3 class="footer__heading">Контакты</h3>
+                <nav>
+                    <a href="tel:+74993808920" class="phone"><img src="img/phone.svg" alt="cont"> + 7 499 380 89 20</a>
+                    <a href="mailto:hr@оctopustech.ru"> <img src="img/mail.svg" alt="cont">hr@оctopustech.ru</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="container wrap">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Пользовательское соглашение</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <form action="#" class="modal-content">
+            <span class="modal__close" id="modalClose">&times;</span>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="text" placeholder="Ваш город" required>
+            <input type="email" placeholder="E-mail" required>
+            <label for="file" class="wrap filepick">
+                <span class="filepick__heading">Прикрепить резюме</span>
+                <img src="img/paperclip.svg" alt="paperclip">
+                <input type="file" id="file" required accept=".docx, .pdf">
+                <span class="filepick__name">Выберите файл</span>
+            </label>
+            <button type="submit" class="btn">Получить работу</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var fileInputs = document.querySelectorAll('input[type="file"]');
+            fileInputs.forEach(function (fileInput) {
+                fileInput.addEventListener('change', function () {
+                    var filename = this.value.split('\\').pop();
+                    var filepickName = this.closest('.filepick').querySelector('.filepick__name');
+                    filepickName.textContent = filename;
+                    var allowedExtensions = /(\.docx|\.pdf)$/i;
+                    if (!allowedExtensions.exec(filename)) {
+                        alert('Выберите файл с расширением .docx или .pdf');
+                        this.value = '';
+                        filepickName.textContent = 'Выберите файл';
+                    }
+                });
+            });
+            
+            var modalClose = document.querySelector('#modalClose'),
+                vac = document.querySelectorAll('.btn_outline'),
+                modal = document.querySelector('#modal'),
+                body = document.body,
+                btn = document.querySelector('#btn');
+
+            [modalClose, btn].concat(Array.from(vac)).forEach(elem => {
+                elem.addEventListener('click', () => {
+                    [modal, body].forEach(el => el.classList.toggle('is-open'));
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
