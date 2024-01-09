@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1210">
     <title>OctopusTech</title>
     <link rel="stylesheet" href="./css/style.css">
 
@@ -33,7 +33,7 @@
                     успешность поиска нашей
                     многолетней экспертизой и станем незаменимым помощником на пути к работе мечты.</p>
 
-                <a href="#" class="btn"><img src="./img/arrow.svg" alt="arrows">Найти работу</a>
+                <a href="#vacancies" class="btn"><img src="./img/arrow.svg" alt="arrows">Найти работу</a>
             </div>
             <img src="./img/main.jpg" class="main__img" alt="images">
         </div>
@@ -186,10 +186,10 @@
                 <input type="text" placeholder="Ваше имя" required>
                 <input type="text" placeholder="Ваш город" required>
                 <input type="email" placeholder="E-mail" required>
-                <label for="file" class="wrap filepick">
+                <label for="file3" class="wrap filepick">
                     <span class="filepick__heading">Прикрепить резюме</span>
                     <img src="img/paperclip.svg" alt="paperclip">
-                    <input type="file" id="file" required accept=".docx, .pdf">
+                    <input type="file" id="file3" required accept=".docx, .pdf">
                     <span class="filepick__name">Выберите файл</span>
                 </label>
                 <button type="submit" class="btn">Получить работу</button>
@@ -206,9 +206,9 @@
             <div class="col">
                 <h3 class="footer__heading">Меню</h3>
                 <nav>
-                    <a href="#"> О нас</a>
-                    <a href="#"> Вакансии</a>
-                    <a href="#"> Как мы работает?</a>
+                    <a href="#about">О нас</a>
+                    <a href="#vacancies">Вакансии</a>
+                    <a href="#how">Как мы работаем?</a>
                 </nav>
             </div>
 
@@ -235,10 +235,10 @@
             <input type="text" placeholder="Ваше имя" required>
             <input type="text" placeholder="Ваш город" required>
             <input type="email" placeholder="E-mail" required>
-            <label for="file" class="wrap filepick">
+            <label for="file2" class="wrap filepick">
                 <span class="filepick__heading">Прикрепить резюме</span>
                 <img src="img/paperclip.svg" alt="paperclip">
-                <input type="file" id="file" required accept=".docx, .pdf">
+                <input type="file" id="file2" required accept=".docx, .pdf">
                 <span class="filepick__name">Выберите файл</span>
             </label>
             <button type="submit" class="btn">Получить работу</button>
@@ -261,7 +261,7 @@
                     }
                 });
             });
-            
+
             var modalClose = document.querySelector('#modalClose'),
                 vac = document.querySelectorAll('.btn_outline'),
                 modal = document.querySelector('#modal'),
